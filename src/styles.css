@@ -1,215 +1,213 @@
 body {
-    margin: 0;
-    background-color: whitesmoke;
+  margin: 0;
+  background-color: whitesmoke;
 }
 
 header {
-    height: 70px;
-    display: flex;
-    align-items: center;
-    background: #ffffff;
-    border-bottom: black 2px solid;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border-bottom: black 2px solid;
 }
 
 header > img {
-    color: black;
-    height: 50%;
-    margin-left: 5%;
+  color: black;
+  height: 50%;
+  margin-left: 5%;
 }
 
 header > p {
-    font-family: Roboto;
-    color: black;
-    font-size: 20px;
-    margin-left: 15px;
+  font-family: Roboto;
+  color: black;
+  font-size: 20px;
+  margin-left: 15px;
 }
 
-
 .modal-wrapper {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .modal-backdrop {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 100;
-    background-color: rgb(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: rgb(0, 0, 0, 0.3);
 }
 
 .modal-box {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: auto;
-    width: 360px;
-    overflow-y: auto;
-    background-color: whitesmoke;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-    z-index: 101;
-    padding: 10px;
-    border-radius: 10px;
-    font-family: roboto;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: auto;
+  width: 360px;
+  overflow-y: auto;
+  background-color: whitesmoke;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  z-index: 101;
+  padding: 10px;
+  border-radius: 10px;
+  font-family: roboto;
 }
 
 .modal-box form {
-    margin: 30px;
+  margin: 30px;
 }
 .modal-box h3 {
-    margin: 20px;
-    padding: 10px;
-    border-bottom: 0.5px solid rgb(83, 83, 83);
+  margin: 20px;
+  padding: 10px;
+  border-bottom: 0.5px solid rgb(83, 83, 83);
 }
 
-.modal-box input[type=text], select, textarea {
-    width: 95%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;
-  }
+.modal-box input[type="text"],
+select,
+textarea {
+  width: 95%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
 
 .modal-box .pop-buttons {
-    margin-left: 30px;
+  margin-left: 30px;
 }
 
 .modal-box .pop-buttons button {
-    border: none;
-    transition-duration: 0.4s;
-    color: white;
-    background-color: #008CBA;
-    font-size: 12px;
-    padding: 10px 24px;
-    border-radius: 4px;
-    margin: 3px;
-    border: 1px solid rgb(153, 153, 153);
+  border: none;
+  transition-duration: 0.4s;
+  color: white;
+  background-color: #008cba;
+  font-size: 12px;
+  padding: 10px 24px;
+  border-radius: 4px;
+  margin: 3px;
+  border: 1px solid rgb(153, 153, 153);
 }
 
 .modal-box .pop-buttons .cancle-button {
-    background-color: rgb(223, 223, 223);
-    color: black;
+  background-color: rgb(223, 223, 223);
+  color: black;
 }
 
 .book {
-    background-color: white;
-    padding: 10px;
-    margin: auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 1px solid #efefef;
-    box-shadow:  0 0 5px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
+  background-color: white;
+  padding: 10px;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #efefef;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
 }
 
 .recipe {
-    background-color: rgb(228, 230, 255);
-    border-radius: 10px;    
-    display: flex;
-    justify-content: flex-start;
-    align-items: left;
-    margin: 3px;
-    width: 100%;
-    font-family: Roboto, sans-serif;
-    font-weight: 100;
-    font-size: 15px;
-    color: #333333;
-
+  background-color: rgb(228, 230, 255);
+  border-radius: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: left;
+  margin: 3px;
+  width: 100%;
+  font-family: Roboto, sans-serif;
+  font-weight: 100;
+  font-size: 15px;
+  color: #333333;
 }
 
 .recipe > p {
-    padding: 0;
-    margin-left: 35px;
+  padding: 0;
+  margin-left: 35px;
 }
 
 .recipe > button {
-    margin: 10px;
-    padding-left: 11px;
-    padding-right: 11px;
-    border: none;
-    color: white;
-    background-color: #006eff44;
-    font-size: 12px;
-    border-radius: 4px;
-    border: 1px dashed rgb(85, 85, 85);
+  margin: 10px;
+  padding-left: 11px;
+  padding-right: 11px;
+  border: none;
+  color: white;
+  background-color: #006eff44;
+  font-size: 12px;
+  border-radius: 4px;
+  border: 1px dashed rgb(85, 85, 85);
 }
 
 .recipe > button:hover {
-     background-color: #00b7ff;
+  background-color: #00b7ff;
 }
 
 .add-button {
-    border: none;
-    transition-duration: 0.4s;
-    color: white;
-    background-color: #008CBA;
-    font-size: 12px;
-    padding: 10px 24px;
-    border-radius: 4px;
-    margin: 5px;
-  }
-  
-.add-button:hover {
-    background-color: #0280aa;
-  }
-
-
-.modal-box .recipe-edit {
-    height: 240px;
-    width: 350px;
+  border: none;
+  transition-duration: 0.4s;
+  color: white;
+  background-color: #008cba;
+  font-size: 12px;
+  padding: 10px 24px;
+  border-radius: 4px;
+  margin: 5px;
 }
 
+.add-button:hover {
+  background-color: #0280aa;
+}
+
+.modal-box .recipe-edit {
+  height: 240px;
+  width: 350px;
+}
 
 .modal-box .pop-buttons-edit {
-    margin-left: 45%;
+  margin-left: 45%;
 }
 
 .modal-box .info-form {
-    margin-top: 30px;
-    margin-bottom: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .modal-box .edit-button {
-    border: none;
-    transition-duration: 0.4s;
-    color: white;
-    background-color: #008CBA;
-    font-size: 12px;
-    padding: 10px 24px;
-    border-radius: 4px;
-    margin: 3px;
-    border: 1px solid rgb(153, 153, 153);
+  border: none;
+  transition-duration: 0.4s;
+  color: white;
+  background-color: #008cba;
+  font-size: 12px;
+  padding: 10px 24px;
+  border-radius: 4px;
+  margin: 3px;
+  border: 1px solid rgb(153, 153, 153);
 }
 .modal-box .delete-button {
-    border: none;
-    transition-duration: 0.4s;
-    color: white;
-    background-color: #c72b2b;
-    font-size: 12px;
-    padding: 10px 24px;
-    border-radius: 4px;
-    margin: 3px;
-    border: 1px solid rgb(153, 153, 153);
+  border: none;
+  transition-duration: 0.4s;
+  color: white;
+  background-color: #c72b2b;
+  font-size: 12px;
+  padding: 10px 24px;
+  border-radius: 4px;
+  margin: 3px;
+  border: 1px solid rgb(153, 153, 153);
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
-    font-family: roboto;
-    background-color: rgb(150, 150, 150);
-    color: rgb(230, 230, 230);
-    padding: 1px;
-    font-weight: 100;
-    font-size: 12px;
-    padding-left: 20px;
+  position: absolute;
+  bottom: 0;
+  font-family: roboto;
+  background-color: rgb(150, 150, 150);
+  color: rgb(230, 230, 230);
+  padding: 1px;
+  font-weight: 100;
+  font-size: 12px;
+  padding-left: 20px;
 }

@@ -1,37 +1,32 @@
-import React, {forwardRef, useImperativeHandle} from "react"
+import React, { forwardRef, useImperativeHandle } from "react";
 
 const PopUpAdd = forwardRef((props, ref) => {
+  const [display, setDisplay] = React.useState(false);
 
-    const [display, setDisplay] = React.useState(false);
-
-
-    useImperativeHandle(ref, () => {
-        return {
-            openModal: () => open(),
-            closeModal: () => close()
-        }
-    })
-
-    const open = () => {
-        setDisplay(true)
+  useImperativeHandle(ref, () => {
+    return {
+      openModal: () => open(),
+      closeModal: () => close(),
     };
+  });
 
-    const close = () => {
-        setDisplay(false)
-    };
+  const open = () => {
+    setDisplay(true);
+  };
 
-    if (display) {
+  const close = () => {
+    setDisplay(false);
+  };
 
-        return (
-            <div className="modal-wrapper">
-                <div onClick={close} className="modal-backdrop" />
-                <div className="modal-box">
-                    {props.children}
-                </div>
-            </div> 
-        )
-    }
-    return null;
+  if (display) {
+    return (
+      <div className="modal-wrapper">
+        <div onClick={close} className="modal-backdrop" />
+        <div className="modal-box">{props.children}</div>
+      </div>
+    );
+  }
+  return null;
 });
 
-export default PopUpAdd
+export default PopUpAdd;

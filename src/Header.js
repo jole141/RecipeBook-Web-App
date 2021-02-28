@@ -1,15 +1,15 @@
-import React from "react"
+import React from "react";
 
-function Header() {
-    return (
-        <header>
-            <img
-                src="https://image.flaticon.com/icons/svg/2937/2937634.svg"
-                alt="cook logo" 
-            />
-            <p>Recipe Book</p>
-        </header>
-    )
-}
+const Header = () => {
+  return (
+    <header>
+      <img
+        src="https://image.flaticon.com/icons/svg/2937/2937634.svg"
+        alt="cook logo"
+      />
+      <p>Recipe Book</p>
+    </header>
+  );
+};
 
-export default Header
+export default Header;
